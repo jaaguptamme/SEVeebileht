@@ -28,12 +28,12 @@ function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidat
         var uusRida="<tr>";
         for(let j=0;j<vaartused.length;j++){
             uusRida+="<td class='"+tahendused[j]+"'>";
-            if(tahendused[j]=="koduleht"){
+            if(tahendused[j]=="koduleht" && vaartused[j].includes("http")){
                 uusRida+="<a href='"+vaartused[j]+"'>";
                 uusRida+=vaartused[j];
                 uusRida+="</a>"
             }
-            else if(tahendused[j]=="email"){
+            else if(tahendused[j]=="email" && vaartused[j].includes("@")){
                 uusRida+="<a href='mailto:"+vaartused[j]+"'>";
                 uusRida+=vaartused[j];
                 uusRida+="</a>"

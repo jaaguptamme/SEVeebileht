@@ -665,7 +665,7 @@ Tõrva Gümnaasiumi Spordisaal,Tõrva vald,Spordikeskus,https://torva.kovtp.ee/t
 Ritsu Spordibaas,Tõrva vald,Spordikeskus,https://torva.kovtp.ee/treeningud,5664 0993,tiina.neumann@torva.ee,Tiina Neumann,'Linna küla, Tõrva vald',,,,,,,,,,,,,,,,Jah,,
 Helme Maarja,Tõrva vald,Kirik,,524 9654,arvo.lasting@eelk.ee,Arvo Lasting,'Kalmistu 2, 68604 Tõrva',,,,,,,,,,,,,,,,,,
 Taagepera Jaani kirik,Tõrva vald,Kirik,,524 9654,arvo.lasting@eelk.ee,Arvo Lasting,'Ala küla, Tõrva vald',,,,,,,,,,,,,,,,,,
-'Tõrva ''Immaanueli'' kirik',Tõrva vald,Kirik,,5 663 3250,torva@ekklesia.ee,Elme Maamägi,'Aia 6, 68605 Tõrva linn',,,,,,,,,,,,,,,,,,
+Tõrva Immaanueli kirik,Tõrva vald,Kirik,,5 663 3250,torva@ekklesia.ee,Elme Maamägi,'Aia 6, 68605 Tõrva linn',,,,,,,,,,,,,,,,,,
 Tõrva Kirik-Kammersaal,Tõrva vald,Kirik,https://torva.kovtp.ee/torva-kirik-kammersaal,763 3143,kammers@hot.ee,Ilmar Kõverik,'Valga tn 42a, 68606 Tõrva',,,,,,,,,,,,,,,,,,
 Ala Rahvamaja,Tõrva vald,Kultuurikeskus,https://torva.kovtp.ee/ala-rahvamaja,5 302 4110,pille@torva.ee,Pille Ilisson,'Ala küla, Tõrva vald',,Jah,Esimene,300,,,,,,,,,,,Jah,Jah,Parkla/Tänaval,Jah
 Hummuli Rahvamaja,Tõrva vald,Kultuurikeskus,https://torva.kovtp.ee/hummuli-rahvamaja,5 341 3150,annejaakson5@gmail.com,Anne Jaakson,'Hummuli, Tõrva vald',,Jah,Teine,,,,Olemas,Olemas,Olemas,,Jah,Seintele riputamisvõimalus,,,Jah,Jah,Parkla/Tänaval,
