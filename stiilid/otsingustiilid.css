@@ -11,3 +11,6 @@ td{
     max-width: 150px;
     overflow: hidden;
 }
+.telefon{
+    white-space: nowrap;
+}

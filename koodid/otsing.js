@@ -27,7 +27,7 @@ function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidat
         var uusRida="<tr>";//loome uue rea tabelisse
         for(let j=0;j<vaartused.length;j++){
             uusRida+="<td class='"+tahendused[j]+"'>";//iga elemendi klassiks saab tema kohal päises olev sõna
-            if(tahendused[j]=="koduleht" && vaartused[j].includes("http")){//kodulehtedele on klikitavad lingid
+            if(tahendused[j]=="koduleht" && vaartused[j].length>5){//kodulehtedele on klikitavad lingid
                 uusRida+="<a href='"+vaartused[j]+"'>";
                 uusRida+=vaartused[j];
                 uusRida+="</a>"
