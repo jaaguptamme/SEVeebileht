@@ -9,8 +9,104 @@
 <script type="text/javascript" src="koodid/andmed.js"></script>
 <script type="text/javascript" src="koodid/otsing.js"></script>
 </head>
-<body onload="LaeTabel();">
+<body onload="Alusta();LaeTabel();">
     <h1>Otsingu läbiviimine</h1>
+    <div>
+        <h2 class="valik">Vali parameetrid</h2>
+        <div class="omavalitsus">
+            <h3 class="omavalitsus">Määra omavalitsus</h3>
+            
+            <input type="checkbox" class="omavalitsus" id="peipsiäärevald" checked>
+            <span>Peipsiääre vald</span>
+            <input type="checkbox" class="omavalitsus" id="luunjavald" checked>
+            <span>Luunja vald</span>
+            <input type="checkbox" class="omavalitsus" id="kastrevald" checked>
+            <span>Kastre vald</span>
+            <input type="checkbox" class="omavalitsus" id="kambjavald" checked>
+            <span>Kambja vald</span>
+            <input type="checkbox" class="omavalitsus" id="tartulinn" checked>
+            <span>Tartu linn</span>
+            <input type="checkbox" class="omavalitsus" id="tartuvald" checked>
+            <span>Tartu vald</span>
+            <input type="checkbox" class="omavalitsus" id="nõovald" checked>
+            <span>Nõo vald</span>
+            <input type="checkbox" class="omavalitsus" id="elvavald" checked>
+            <span>Elva vald</span>
+            <input type="checkbox" class="omavalitsus" id="räpinavald" checked>
+            <span>Räpina vald</span>
+            <input type="checkbox" class="omavalitsus" id="põlvavald" checked>
+            <span>Põlva vald</span>
+            <input type="checkbox" class="omavalitsus" id="põlvalinn" checked>
+            <span>Põlva linn</span>
+            <input type="checkbox" class="omavalitsus" id="kanepivald" checked>
+            <span>Kanepi vald</span>
+            <input type="checkbox" class="omavalitsus" id="antslavald" checked>
+            <span>Antsla vald</span>
+            <input type="checkbox" class="omavalitsus" id="setomaavald" checked>
+            <span>Setomaa vald</span>
+            <input type="checkbox" class="omavalitsus" id="võrulinn" checked>
+            <span>Võru linn</span>
+            <input type="checkbox" class="omavalitsus" id="võruvald" checked>
+            <span>Võru vald</span>
+            <input type="checkbox" class="omavalitsus" id="rõugevald" checked>
+            <span>Rõuge vald</span>
+            <input type="checkbox" class="omavalitsus" id="valgavald" checked>
+            <span>Valga vald</span>
+            <input type="checkbox" class="omavalitsus" id="otepäävald" checked>
+            <span>Otepää vald</span>
+            <input type="checkbox" class="omavalitsus" id="viljandilinn" checked>
+            <span>Viljandi linn</span>
+            <input type="checkbox" class="omavalitsus" id="tõrvavald" checked>
+            <span>Tõrva vald</span>
+
+        </div>
+        <div class="tüüp">
+            <h3 class="tüüp">Määra asutuse tüüp</h3>
+            
+            <input type="checkbox" class="tüüp" id="kultuurikeskus" checked> 
+            <span>Kultuurikeskus</span>
+            <input type="checkbox" class="tüüp" id="sündmuskeskus" checked> 
+            <span>Sündmuskeskus</span>
+            <input type="checkbox" class="tüüp" id="muuseum" checked> 
+            <span>Muuseum</span>
+            <input type="checkbox" class="tüüp" id="raamatukogu" checked> 
+            <span>Raamatukogu</span>
+            <input type="checkbox" class="tüüp" id="kirik" checked> 
+            <span>Kirik</span>
+            <input type="checkbox" class="tüüp" id="staadion" checked> 
+            <span>Staadion</span>
+            <input type="checkbox" class="tüüp" id="noortekeskus" checked> 
+            <span>Noortekeskus</span>
+            <input type="checkbox" class="tüüp" id="vabaõhulava" checked> 
+            <span>Vabaõhulava</span>
+            <input type="checkbox" class="tüüp" id="spordikeskus" checked> 
+            <span>Spordikeskus</span>
+            <input type="checkbox" class="tüüp" id="muusikakool" checked> 
+            <span>Muusikakool</span>
+            <input type="checkbox" class="tüüp" id="teater" checked> 
+            <span>Teater</span>
+            <input type="checkbox" class="tüüp" id="elamuskeskus" checked> 
+            <span>Elamuskeskus</span>
+            <input type="checkbox" class="tüüp" id="galerii" checked> 
+            <span>Galerii</span>
+            <input type="checkbox" class="tüüp" id="kino" checked> 
+            <span>Kino</span>
+            <input type="checkbox" class="tüüp" id="klubi" checked> 
+            <span>Klubi</span>
+            <input type="checkbox" class="tüüp" id="spordiväljak" checked> 
+            <span>Spordiväljak</span>
+        </div>
+        <div class="inimesi">
+            <input type="range" min="0" max="2000" value="40" class="inimesi" id="mininimesislider" step="5">
+            <span>Minimaalne mahutavus:</span>
+            <span id="mininimesiarv"></span>
+            <br>
+            <input type="range" min="0" max="2000" value="40" class="inimesi" id="maxinimesislider" step="10">
+            <span>Maksimaalne mahutavus</span>
+            <span id="maxinimesiarv"></span>
+        </div>
+        <button onclick="LaeTabel()">Lae uuesti</button>
+    </div>
     <div>
         <table id="p6hitabel">
             <thead>

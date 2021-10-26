@@ -14,3 +14,6 @@ td{
 .telefon{
     white-space: nowrap;
 }
+input.inimesi{
+    width: 200px;
+}

@@ -630,9 +630,7 @@ Viljandi Spordikeskus,Viljandi linn,Spordikeskus,www.viljandispordikeskus.ee,43 
 Viljandi Jäähall,Viljandi linn,Spordikeskus,www.viljandijaahall.ee,645 9300​,info@viljandijaahall.ee,,'Puidu 8, 71020',,Jah,Esimene,,Ei,,,,,,,,,Jah,,Jah,,
 OÜ Tennisekeskus,Viljandi linn,Spordikeskus,viljanditennis.ee/hall,56 49 43 81,fellin@tennisekeskus.eu,,'Tartu tn 8, 71020',,Jah,Esimene,,Ei,,,,,,,,,,,Jah,,
 Viljandi linnastaadion,Viljandi linn,Staadion,http://spordiplatsid.ee/plats/2352/Viljandi-linnastaadion,4351 575,spordikeskus@viljandi.ee,Mati Jürisson,'Ranna pst 1, Viljandi linn, 71003',,Ei,,,Ei,,,,,,,,,Jah,,Jah,100 kohta,
-Viljandi laululava,Viljandi linn,Vabaõhulava,https://www.sakalakeskus.ee/asukoht/viljandi-lauluvaljak/,433 3992,info@sakalakeskus.ee,Jaanus Kukk,'Talli 2, Viljandi',1000 +,Ei,,1000+,'Laulukaare laius 41 m
-laulukaare kõrgus 13,3 m
-Laulukaare sügavus 17,5 m',,Puuduvad,Puuduvad,Puuduvad,,Ei,Ei,2×63 A,Jah,,Jah,ei ole,Jah
+Viljandi laululava,Viljandi linn,Vabaõhulava,https://www.sakalakeskus.ee/asukoht/viljandi-lauluvaljak/,433 3992,info@sakalakeskus.ee,Jaanus Kukk,'Talli 2, Viljandi',1000 +,Ei,,1000+,'Laulukaare laius 41 m laulukaare kõrgus 13,3 m Laulukaare sügavus 17,5 m',,Puuduvad,Puuduvad,Puuduvad,,Ei,Ei,2×63 A,Jah,,Jah,ei ole,Jah
 Jaani kirik,Viljandi linn,Kirik,https://viljandi.jaani.eelk.ee/,5341 3394,marko.tiitus@eelk.ee,Marko Tiitus,'Pikk 6, Viljandi, 71003',,Jah,Esimene,,Ei,,,,,,,,,,,,,
 Pauluse kirik,Viljandi linn,Kirik,https://viljandi.praostkond.eelk.ee/kogudus.php?id=159,521 2518,viljandi.pauluse@eelk.ee,Allan Praats,'Kiriku 5, 71003 Viljandi',,Jah,Esimene,,Ei,,,,,,,,,,,,,
 Viljandi baptistikirik,Viljandi linn,Kirik,https://vbk.ee/,505 8943,info@vbk.ee,,'August Maramaa puiestee 1A, Viljandi, 71007',,Jah,Esimene,,Ei,,,,,,,,,,,,,
