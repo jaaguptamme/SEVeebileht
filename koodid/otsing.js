@@ -5,8 +5,7 @@ for(let i=0;i<nimed.length;i++){
     tahendused[i]=nimed[i];
 }
 
-function Alusta(){
-    
+function Alusta(){//alguses täidetakse see funtsioon
     document.getElementById("mininimesiarv").innerHTML=document.getElementById("mininimesislider").value;
     document.getElementById("maxinimesiarv").innerHTML=document.getElementById("maxinimesislider").value;
     //lisame mahutavuse slideritele juurde arvulise väärtuse, mida kasutaja näeb
@@ -20,6 +19,7 @@ function Alusta(){
 function EemaldaTühikud(sõne){//eemaldame sõnest tühikud ja muudame kõik tähed väikeseks, sest htmlis ei või id olla mitmesõnaline;
     return sõne.toLowerCase().split(" ").join("");
 }
+
 function Kontrolli(veerud){//Vastavalt kasutaja sisendile kontrollime kas, vaadeldav rida on selline, mida peab lehel näitama
     
     let vald=EemaldaTühikud(veerud[tahendused["omavalitsus"]]);//leiame vaadeldava rea omavalitsuse id
@@ -35,6 +35,7 @@ function Kontrolli(veerud){//Vastavalt kasutaja sisendile kontrollime kas, vaade
     }
     return 1;
 }
+
 function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidatakse
     var uusHtml="";//genereerime uue html-koodi
     var read=andmed.split('\n');//jagab failis andmed.js antud string tüüpi muutuja ridadeks
