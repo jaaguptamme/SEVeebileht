@@ -1,9 +1,14 @@
-function LaeTabel(){
-    //alert("SIIN");
-    //alert(andmed.length);
-    var read=andmed.split('\n');
+var tahendused={};//sõnaraamat tahendused on üksühene vastavud veeru nimetuse ja tema positsiooni vahel
+nimed=nimetused.split(',');
+for(let i=0;i<nimed.length;i++){
+    tahendused[nimed[i]]=i;
+    tahendused[i]=nimed[i];
+}
+
+function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidatakse
     
-    for(let i=0;i<10/*read.length*/;i++){
+    var read=andmed.split('\n');//jagab failis andmed.js antud string tüüpi muutuja ridadeks
+    for(let i=0;i<read.length;i++){
         var vaartused=read[i].split("'");
         var v2=[];
         for(let j=0;j<vaartused.length;j++){
@@ -18,17 +23,27 @@ function LaeTabel(){
                 v2.push(vaartused[j]);
             }
         }
-        //alert(v2);
-       vaartused=v2;
-        //vaartused=vaartused[0].split(',')+vaartused[1]+vaartused[2].split(',');
-        var lisarida="<tr>";
+        vaartused=v2;
+
+        var uusRida="<tr>";
         for(let j=0;j<vaartused.length;j++){
-            lisarida+="<td>";
-            lisarida+=vaartused[j];
-            lisarida+="</td>";
+            uusRida+="<td class='"+tahendused[j]+"'>";
+            if(tahendused[j]=="koduleht"){
+                uusRida+="<a href='"+vaartused[j]+"'>";
+                uusRida+=vaartused[j];
+                uusRida+="</a>"
+            }
+            else if(tahendused[j]=="email"){
+                uusRida+="<a href='mailto:"+vaartused[j]+"'>";
+                uusRida+=vaartused[j];
+                uusRida+="</a>"
+            }
+            else{
+                uusRida+=vaartused[j];
+            }
+            uusRida+="</td>";
         }
-        lisarida+="</tr>";
-        document.getElementById("p6hitabel").innerHTML+=lisarida;
-        //alert(vaartused[0]);
+        uusRida+="</tr>";
+        document.getElementById("p6hitabel").getElementsByTagName('tbody')[0].innerHTML+=uusRida;
     }
 }

@@ -1,0 +1,13 @@
+.email{
+    background-color: aqua;
+}
+#p6hitabel{
+    table-layout:auto;
+}
+tbody tr:nth-child(odd){
+    background-color: burlywood;
+}
+td{
+    max-width: 150px;
+    overflow: hidden;
+}
