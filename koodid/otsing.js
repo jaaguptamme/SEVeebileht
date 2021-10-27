@@ -121,6 +121,11 @@ function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidat
                 uusRida+=vaartused[j];
                 uusRida+="</a>"
             }
+            else if(tahendused[j]=="postiaadress"){//asutuse aadressile lisame lingi, mis viib google mapsi
+                uusRida+="<a href='https://maps.google.com/?q="+vaartused[j]+"'>";
+                uusRida+=vaartused[j];
+                uusRida+="</a>"
+            }
             else{
                 uusRida+=vaartused[j];
             }
