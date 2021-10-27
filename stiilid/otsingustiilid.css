@@ -4,7 +4,7 @@
 #p6hitabel{
     table-layout:auto;
 }
-tbody tr:nth-child(odd){
+#p6hitabel tbody tr:nth-child(odd){
     background-color: burlywood;
 }
 td{
@@ -15,5 +15,5 @@ td{
     white-space: nowrap;
 }
 input.inimesi{
-    width: 200px;
+    width: 60px;
 }

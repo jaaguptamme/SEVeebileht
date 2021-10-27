@@ -1,4 +1,11 @@
-var nimetused="nimi,omavalitsus,asutuse_tüüp,koduleht,telefon,email,kontaktisiku_nimi,postiaadress,mahutavus,saali_olemasolu,saali_asukoht,saali_mahutavus,saali_lava_mõõtmed,II_saali_mahutavus,helitehnilised_võimalused,valgustehnilised_võimalused,esitlustehnika_võimalused,ekraanimõõtmed,näitusesaali_galerii_olemasolu,näitusesaali_galerii_võimalused,peakaitsme_võimsus,juurdepääs_ratastooliga,internetiühendus,tualettide_info,parkimise_info,vabaõhusündmuste_paiga_olemasolu"
+//Siin failis on sissekodeeritud kujul lähte andmed, kuna xls failist lugemine tundus paras peavalu
+var nimetused="nimi,omavalitsus,asutusetüüp,koduleht,telefon,email,kontaktisikunimi,postiaadress,mahutavus,saaliolemasolu,saaliasukoht,saalimahutavus,saalilavamõõtmed,IIsaalimahutavus,helitehnilisedvõimalused,valgustehnilisedvõimalused,esitlustehnikavõimalused,ekraanimõõtmed,näitusesaaligaleriiolemasolu,näitusesaaligaleriivõimalused,peakaitsmevõimsus,juurdepääsratastooliga,internetiühendus,tualettideinfo,parkimiseinfo,vabaõhusündmustepaigaolemasolu"
+var tahendused={};//sõnaraamat tahendused on üksühene vastavud veeru nimetuse ja tema positsiooni vahel
+nimed=nimetused.split(',');
+for(let i=0;i<nimed.length;i++){
+    tahendused[nimed[i]]=i;
+    tahendused[i]=nimed[i];
+}
 var andmed=`Kolkja rahvamaja,Peipsiääre vald,Kultuurikeskus,,5692 6183,marina.losak@peipsivald.ee,Marina Lõsak,'Kolkja alevik, Peipsiääre vald, Tartumaa 60301',80,Jah,Esimene,80,'9,4x3,5',,Olemas,Olemas,Olemas,,Ei,Kunstiteoste seinale riputamisvõimalus,40A,Ei,WiFi,Jah,15 kohta parklas,'Paigaldatavad istmed, statsionaarne vabaõhulava'
 Koosa rahvamaja,Peipsiääre vald,Kultuurikeskus,https://www.facebook.com/koosarahvamaja/,5886 8266,koosa.noorteklubi@gmail.com,Merlin Sooaru,'Koosa 9, Peipsiääre vald, Tartumaa 60432',200,Jah,Esimene,200,'5,8x3,5',,Olemas,Olemas,Olemas,350 x 250,Ei,Kunstiteoste seinale riputamisvõimalus,3x50A,Jah,'Interneti püsiühendus, WiFi',Jah,20 kohta parklas,'Lõkkease, paigaldatavad istmed, statsionaarne vabaõhulava'
 Pala kultuurimaja,Peipsiääre vald,Kultuurikeskus,https://www.facebook.com/Pala-Kultuurimaja-257244520972927/,773 4689; 525 8797,margit.soieva@pala.ee,Margit Soieva,'Pala küla, Peipsiääre vald, Tartumaa 49426',200,Jah,Esimene,200,6x7,,Olemas,Olemas,Olemas,600x250,Jah,Kunstiteoste seinale riputamisvõimalus. Võimalus olemas ka raamatukogus.,40A,Jah,'Interneti püsiühendus, WiFi',Jah,30 kohta parklas,'Lipuvarras, paigaldatavad istmed, statsionaarne vabaõhulava, statsionaarsed välikemmergud, tantsuplatsiolemasolu, välivalgustus'

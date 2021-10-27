@@ -1,38 +1,84 @@
-var tahendused={};//sõnaraamat tahendused on üksühene vastavud veeru nimetuse ja tema positsiooni vahel
-nimed=nimetused.split(',');
-for(let i=0;i<nimed.length;i++){
-    tahendused[nimed[i]]=i;
-    tahendused[i]=nimed[i];
-}
-
-function Alusta(){//alguses täidetakse see funtsioon
-    document.getElementById("mininimesiarv").innerHTML=document.getElementById("mininimesislider").value;
-    document.getElementById("maxinimesiarv").innerHTML=document.getElementById("maxinimesislider").value;
-    //lisame mahutavuse slideritele juurde arvulise väärtuse, mida kasutaja näeb
-    document.getElementById("mininimesislider").oninput=function(){
-        document.getElementById("mininimesiarv").innerHTML=this.value;
-    }
-    document.getElementById("maxinimesislider").oninput=function(){
-        document.getElementById("maxinimesiarv").innerHTML=this.value;
-    }
-}
+//Vahelehe Otsing.html js fail
 function EemaldaTühikud(sõne){//eemaldame sõnest tühikud ja muudame kõik tähed väikeseks, sest htmlis ei või id olla mitmesõnaline;
     return sõne.toLowerCase().split(" ").join("");
 }
 
+function SõnestArv(sõne){//funktsioon, mis teeb etteantud sõnest arvu, 
+    //lähte andmetes pole arvud eriti puhtal kujul
+    if(sõne.length==0)return 0;
+    let vastus=0;
+    for(let i=0;i<sõne.length;i++){
+        if("0123456789".includes(sõne[i])){
+            vastus=10*vastus+parseInt(sõne[i]);
+        }
+        else{
+            break;
+        }
+    }
+    return vastus;
+}
+
+function MuudaMärkeruudud(klass){//muudame kõik vaadeldava klassi märkeruutude olekut
+    let objektid=document.getElementsByClassName(klass);//selle klassi kõik objektid
+    let märkeruudud=[];//selle klassi kõik märkeruudud
+    let mõnisees=0;
+    for(let i=0;i<objektid.length;i++){
+        if(objektid[i].tagName=="INPUT"){
+            mõnisees+=objektid[i].checked;
+            märkeruudud.push(objektid[i]);
+        }
+    }
+    for(let i=0;i<märkeruudud.length;i++){
+        märkeruudud[i].checked=!mõnisees;
+    }
+}
 function Kontrolli(veerud){//Vastavalt kasutaja sisendile kontrollime kas, vaadeldav rida on selline, mida peab lehel näitama
     
+    let saalimahutavus=SõnestArv(veerud[tahendused["mahutavus"]]);//vaadeldava saali mahutavus
+    let min=document.getElementById("mininimesislider").value;//kasutaja poolt lubatud miinimum
+    let max=document.getElementById("maxinimesislider").value;//kasutaja poolt lubatud maksimum
+    let lubatundmata=document.getElementById("teadmatamahutavus").checked;//kas tabeli read, kus väärtust pole on lubatud
+    if(saalimahutavus==0 && lubatundmata==0){
+        return 0;
+    }
+    else if(saalimahutavus!=0 && (min>saalimahutavus || max<saalimahutavus)){
+        return 0;
+    }
     let vald=EemaldaTühikud(veerud[tahendused["omavalitsus"]]);//leiame vaadeldava rea omavalitsuse id
     if(vald=="")return 1;
     if(document.getElementById(vald).checked==0){//kui kasutaja ei taha seda valda, siis seda ei väljastata
         return 0;
     }
 
-    let tüüp=EemaldaTühikud(veerud[tahendused["asutuse_tüüp"]]);//leiame vaadeldava rea asutusetüübi id
+    let tüüp=EemaldaTühikud(veerud[tahendused["asutusetüüp"]]);//leiame vaadeldava rea asutusetüübi id
     if(tüüp=="")return 1;
     if(document.getElementById(tüüp).checked==0){//kui kasutaja ei taha seda tüüpi asutust, siis seda ei väljastata
         return 0;
     }
+    let saalivajalikkus=document.getElementById("saaliolemasolu").checked;//kas kasutaja tahab saali
+    let sellesaaliolemasolu=EemaldaTühikud(veerud[tahendused["saaliolemasolu"]]);//kas selles asutuses on saal
+    if(saalivajalikkus==1&&sellesaaliolemasolu!="jah"){
+        return 0;
+    }
+
+    let helitehnikavajalikkus=document.getElementById("helitehnilisedvõimalused").checked;//kas kasutaja tahab helitehilisi võimalusi
+    let helitehnikaolemasolu=EemaldaTühikud(veerud[tahendused["helitehnilisedvõimalused"]]);//kas selles asutuses on helitehnilised võimalused
+    if(helitehnikavajalikkus==1&&(helitehnikaolemasolu.includes("puudu") || helitehnikaolemasolu.length<5)){
+        return 0;
+    }
+
+    let valgustehnikavajalikkus=document.getElementById("valgustehnilisedvõimalused").checked;//kas kasutaja tahab valgustehnilisi võimalusi
+    let valgustehnikaaolemasolu=EemaldaTühikud(veerud[tahendused["valgustehnilisedvõimalused"]]);//kas selles asutuses on valgustehnilised võimalused
+    if(valgustehnikavajalikkus==1&&(valgustehnikaaolemasolu.includes("puudu") || valgustehnikaaolemasolu.length<5)){
+        return 0;
+    }
+
+    let esitlustehnikavajalikkus=document.getElementById("esitlustehnikavõimalused").checked;//kas kasutaja tahab esitlustehnilisi võimalusi
+    let esitlustehnikaolemasolu=EemaldaTühikud(veerud[tahendused["esitlustehnikavõimalused"]]);//kas selles asutuses on esitlustehnika võimalused
+    if(esitlustehnikavajalikkus==1&&(esitlustehnikaolemasolu.includes("puudu") || esitlustehnikaolemasolu.length<5)){
+        return 0;
+    }
+
     return 1;
 }
 
