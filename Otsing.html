@@ -4,12 +4,14 @@
 <link rel="stylesheet" href="stiilid/uldstiil.css">
 <link rel="stylesheet" href="stiilid/otsingustiilid.css">
 <title>Otsingumootor</title>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
 <script type="text/javascript" src="koodid/andmed.js"></script>
 <script type="text/javascript" src="koodid/otsing.js"></script>
 </head>
 <body onload="LaeTabel();">
+    <div id="päis">
+
+    </div>
+    <script type="text/javascript" src="koodid/uldinekood.js"></script>
     <h1>Otsingu läbiviimine</h1>
     <div>
         <h2 class="valik">Vali parameetrid</h2>
@@ -185,7 +187,7 @@
             <button class="tüüp" onclick="MuudaMärkeruudud('tüüp');">Vali Kõik</button>
         </div>
         <div class="inimesi">
-            <h3 class="inimesi">Kui palju inimesi tuleb?</h3> 
+            <h3 class="inimesi">Määra eeldatav inimeste arv?</h3> 
             <input type="number" min="0" max="2000" value="0" class="inimesi" id="mininimesislider">
             <span>Minimaalne mahutavus</span>
             <span id="mininimesiarv"></span>
@@ -198,6 +200,7 @@
             <span>Luba asutused, kus mahutavus pole teada</span>
         </div>
         <div class="jahei">
+            <h3 class="jahei">Teised parameetrid</h3>
             <input type="checkbox" class="jahei" id="saaliolemasolu"> 
             <span>Kas saal on vajalik?</span>
             <br>
@@ -210,7 +213,7 @@
             <input type="checkbox" class="jahei" id="esitlustehnikavõimalused"> 
             <span>Kas esitlustehnika võimalused on vajalikud?</span>
         </div>
-        <button onclick="LaeTabel()">Lae uuesti</button>
+        <button onclick="LaeTabel()">Lae tabel uuesti</button>
     </div>
     <div>
         <table id="p6hitabel">
@@ -250,4 +253,5 @@
         </table>
     </div>
 </body>
+
 </html>
