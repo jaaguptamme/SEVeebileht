@@ -544,7 +544,7 @@ Luutsniku raamatukogu ja külaselts,Rõuge vald,Kultuurikeskus,https://www.faceb
 Nursi külakeskus ja raamatukogu,Rõuge vald,Kultuurikeskus,,787 9331,nursirk@rauge.ee,Sirje Saarniit,'Nursi küla, Rõuge vald, Võrumaa, 66712',,Jah,,,,,,,,,,,,,,,,
 MTÜ Filmi Vargamäe,Rõuge vald,Elamuskeskus,http://www.filmivargamae.ee/,502 9724,ingrid@filmivargamae.ee,Ingrid Ulst,Tüviste Vastse-Roosa küla Rõuge vald Võrumaa 66013,,Ei,,,,,,,,,,,,,,,,
 Rõuge kunstikuur,Rõuge vald,Kultuurikeskus,https://kunstikuuristoimub.wixsite.com/kunstikuur/kontakt,5552 3366,kunstikuuristoimub@gmail.com,Lya Veski,'Võru mnt 1, Rõuge vald 66201',,Ei,,,,,,,,,olemas,,,,,,,
-MTÜ Revolutsioon,,Kultuurikeskus,https://revolutsioon.ee,5655 410,martin@revolutsioon.ee,Martin Mark,'Haanja mnt 21, Rõuge, 66201',,Jah,,,,,,,olemas,,,,,,,,,
+MTÜ Revolutsioon,Rõuge vald,Kultuurikeskus,https://revolutsioon.ee,5655 410,martin@revolutsioon.ee,Martin Mark,'Haanja mnt 21, Rõuge, 66201',,Jah,,,,,,,olemas,,,,,,,,,
 Sann ja Süük MTÜ,Rõuge vald,Elamuskeskus,,503 2341,eda.veeroja@gmail.com,Eda Veeroja,,,Ei,,,,,,,,,,,,,,,,
 Suure Munamäe vaatetorn,Rõuge vald,Muuseum,suurmunamagi.ee,787 8847,munamagi318@gmail.com,,'Haanja, Võrumaa',,Ei,,,,,,,,,,,,,,,,
 Catlamaja / Rõuge koostöökeskus,Rõuge vald,Kultuurikeskus,https://catlamaja.rauge.ee/,521 7587,catlamaja@gmail.com,Jaanus Mark,Soojuse tn 5 Rõuge alevik,20,Jah,Kolmas,,,,,,olemas,,,,,,,,,
