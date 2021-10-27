@@ -1,4 +1,5 @@
 //Vahelehe Otsing.html js fail
+
 function EemaldaTühikud(sõne){//eemaldame sõnest tühikud ja muudame kõik tähed väikeseks, sest htmlis ei või id olla mitmesõnaline;
     return sõne.toLowerCase().split(" ").join("");
 }
@@ -18,7 +19,7 @@ function SõnestArv(sõne){//funktsioon, mis teeb etteantud sõnest arvu,
     return vastus;
 }
 
-function MuudaMärkeruudud(klass){//muudame kõik vaadeldava klassi märkeruutude olekut
+function MuudaMärkeruudud(klass){//muudame kõigi vaadeldava klassi märkeruutude olekut
     let objektid=document.getElementsByClassName(klass);//selle klassi kõik objektid
     let märkeruudud=[];//selle klassi kõik märkeruudud
     let mõnisees=0;
