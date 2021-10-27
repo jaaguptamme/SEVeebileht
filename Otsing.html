@@ -12,7 +12,7 @@
 
     </div>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
-    <h1>Otsingu läbiviimine</h1>
+    <h1>Koha otsing</h1>
     <div>
         <h2 class="valik">Vali parameetrid</h2>
         <div class="omavalitsus">
@@ -109,7 +109,7 @@
                     </td> 
                  </tr>
             </table> 
-            <button class="omavalitsus" onclick="MuudaMärkeruudud('omavalitsus');">Vali Kõik</button>
+            <button class="omavalitsus" onclick="MuudaMärkeruudud('omavalitsus');">Vali kõik</button>
 
         </div>
         <div class="tüüp">
@@ -184,7 +184,7 @@
                     </td>
                 </tr>       
             </table>
-            <button class="tüüp" onclick="MuudaMärkeruudud('tüüp');">Vali Kõik</button>
+            <button class="tüüp" onclick="MuudaMärkeruudud('tüüp');">Vali kõik</button>
         </div>
         <div class="inimesi">
             <h3 class="inimesi">Määra eeldatav inimeste arv?</h3> 
@@ -212,6 +212,9 @@
             <br>
             <input type="checkbox" class="jahei" id="esitlustehnikavõimalused"> 
             <span>Kas esitlustehnika võimalused on vajalikud?</span>
+            <br>
+            <input type="text" class="jahei" id="nimeosa" maxlength="20">
+            <label for="nimeosa">Otsitava koha nime osa</label>
         </div>
         <button onclick="LaeTabel()">Lae tabel uuesti</button>
     </div>

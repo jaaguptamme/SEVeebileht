@@ -34,7 +34,12 @@ function MuudaMärkeruudud(klass){//muudame kõigi vaadeldava klassi märkeruutu
     }
 }
 function Kontrolli(veerud){//Vastavalt kasutaja sisendile kontrollime kas, vaadeldav rida on selline, mida peab lehel näitama
-    
+    let sellenimi=EemaldaTühikud(veerud[tahendused["nimi"]]);//vaadeldava asutuse nimi
+    let otsitavnimi=EemaldaTühikud(document.getElementById("nimeosa").value);//kasutaja poolt sisestatud nimeosa
+    if(!sellenimi.includes(otsitavnimi)){
+        return 0;
+    }
+
     let saalimahutavus=SõnestArv(veerud[tahendused["mahutavus"]]);//vaadeldava saali mahutavus
     let min=document.getElementById("mininimesislider").value;//kasutaja poolt lubatud miinimum
     let max=document.getElementById("maxinimesislider").value;//kasutaja poolt lubatud maksimum
