@@ -3,9 +3,19 @@
 }
 #p6hitabel{
     table-layout:auto;
+    background-color: lightpink;
+}
+#p6hitabel, td{
+    padding-inline: 2px;
+}
+#p6hitabel, tr:hover{
+    filter: brightness(115%);
 }
 #p6hitabel tbody tr:nth-child(odd){
     background-color: burlywood;
+}
+#p6hitabel tbody tr:nth-child(even){
+    background-color:lightgreen;
 }
 td{
     max-width: 150px;
