@@ -11,6 +11,9 @@
 
     </div>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
+    <div id="berniepilt" onmousemove="Peida('berniepilt',500);">
+        <img src="pildid/berniememe.jpg"/>
+    </div>
     <div id="küsitlus">
         <div id="tutvustus">
             <h1>Kontakteeru meiega</h1>
@@ -25,12 +28,12 @@
                 <label for="email">Sinu e-posti aadress:</label><br>
                 <input type="email" id="email" placeholder="Kirjuta siia oma e-posti aadress" maxlength="40"/><br>
                 <label for="kirjeldus">Koha kirjeldus:</label><br>
-                <textarea type="text" id="kirjeldus" rows="10" cols="40" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
+                <textarea type="text" id="kirjeldus" rows="30" cols="80" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
             </form>
             <button id="saatmisnupp" onclick="SaadaKontrolli();">Saada ära</button>
         </div>
         <div id="pealesisestamist">
-            <p>Kas kõik vajalik sai kirja? Koha kirjeldus peaks siseldama järgmist:</p>
+            <p>Koha kirjeldus peaks siseldama järgmist:</p>
             <ul>
                 <li>Asutuse nimi</li>
                 <li>Omavalitsus</li>
@@ -59,6 +62,7 @@
                 <li>Parkimise info</li> 
                 <li>Vabaõhusündmuste paiga olemasolu</li> 
             </ul>
+            <p id="küsiüle">Kas kõik vajalik sai kirja? </p>
             <button id="lõpetamata" onclick="TäiendanVeel()">Ei</button>
             <button id="lõpetatud" onclick="SaadaLõplikult()">Jah</button>
         </div>

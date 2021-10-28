@@ -1,8 +1,25 @@
+input{
+    width: 20%;
+}
 div#pealesisestamist{
+    padding: 10px;
     display: none;
 }
 #tänusõnad{
     display:none;
     background-color:lightcyan;
     padding: 20px;
+}
+#küsiüle{
+    font-weight: bold;
+}
+#lõpetamata,#lõpetatud,#saatmisnupp{
+    font-weight: bold;
+    font-size: large;
+}
+#lõpetamata{
+    background-color:red;
+}
+#lõpetatud{
+    background-color:springgreen;
 }

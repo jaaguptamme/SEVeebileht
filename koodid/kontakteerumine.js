@@ -1,3 +1,6 @@
+function Peida(id,aeg){//See funtsioon kui hiirt liigutatakse ja see peidab meme vastavalt edastatavatele parameetritele
+    setTimeout(function(){document.getElementById(id).style.display="none";},aeg);
+}
 function SaadaKontrolli(){//kutsutakse välja kui kasutaja üritab andmeid edastada
     if(document.getElementById("nimi").value.length<5){//kasutaja pole nime sisetanud
         alert("Sisesta palun oma nimi");
@@ -19,7 +22,7 @@ function SaadaKontrolli(){//kutsutakse välja kui kasutaja üritab andmeid edast
     document.getElementById("saatmisnupp").style.display="none";
 }
 function TäiendanVeel(){//kasutaja täiendab veel sisestatavaid andmeid.
-    document.getElementById("pealesisestamist").style.display="none";
+    //document.getElementById("pealesisestamist").style.display="none";
     document.getElementById("saatmisnupp").style.display="block";
 }
 function SaadaLõplikult(){//kasutaja saadab andmed lõplikult ära;
@@ -27,7 +30,7 @@ function SaadaLõplikult(){//kasutaja saadab andmed lõplikult ära;
     document.getElementById("pealesisestamist").style.display="none";
 
     /*ekirja koostamine, need imelikud sümbolid on reavahetuse tähistamiseks*/
-    let sõnum="Hei, olen "+document.getElementById("nimi").value +" ja haldan ühte lahedat kohta. Soovin, et see oleks leitav sinu veebilehel. %0d%0a";
+    let sõnum="Hei, olen "+document.getElementById("nimi").value +" ja haldan üht lahedat kohta. Soovin, et see oleks leitav sinu veebilehel. %0d%0a";
     sõnum+="Koha lühikirjeldus: "+document.getElementById("kirjeldus").value +"%0d%0a";
     sõnum+="Minu kontaktandmed: %0d%0a";
     sõnum+="Telefoninumber: "+document.getElementById("telefon").value+"%0d%0a";

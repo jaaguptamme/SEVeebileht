@@ -22,10 +22,11 @@ input.inimesi{
     width: 60px;
 }
 #laetabel{
+    font-size:medium;
+    font-weight: bold;
     width: 200px;
     height: 40px;
-    border-radius: 10px;
-    background-color:salmon;
+    background-color:crimson;
 }
 div.parameetrid > .tabelinupp{
     padding-bottom: 10px;
