@@ -1,5 +1,35 @@
-.email{
-    background-color: aqua;
+.nimi{
+    font-weight: bold;
+}
+.telefon{
+    white-space: nowrap;
+}
+
+#vallatabel {
+    background-color: floralwhite;
+}
+#asutusetabel {
+    background-color: floralwhite;
+}
+#vallatabel td{
+    border: 1px solid black;
+}
+#asutusetabel td{
+    border: 1px solid black;
+}
+
+input.inimesi{
+    width: 60px;
+}
+#laetabel{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:salmon;
+}
+div.parameetrid > .tabelinupp{
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 #p6hitabel{
     table-layout:auto;
@@ -21,9 +51,4 @@ td{
     max-width: 150px;
     overflow: hidden;
 }
-.telefon{
-    white-space: nowrap;
-}
-input.inimesi{
-    width: 60px;
-}
+

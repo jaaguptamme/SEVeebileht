@@ -13,10 +13,20 @@
     </div>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
     <h1>Koha otsing</h1>
-    <div>
-        <h2 class="valik">Vali parameetrid</h2>
+    <div class="parameetrid">
+        <div id="otsingututvustus">
+            <p>Siin lehel saad vastavalt enda soovidele leida sobiva koha. Selleks määra:</p>
+            <ol>
+                <li>Sobivad omavalitsused</li>
+                <li>Mis tüüpi asutust otsid</li>
+                <li>Umbkaudne inimeste arv</li>
+                <li>Teised nõudmised asukohale</li>
+            </ol>
+            <p>Kui oled oma soovid kirja pannud, siis tabeli uuesti laadimiseks vajuta nupule.</p>
+        </div>
+        
         <div class="omavalitsus">
-            <h3 class="omavalitsus">Määra omavalitsus</h3>
+            <h3 class="omavalitsus">Omavalitsus</h3>
             <table id="vallatabel">
                 <tr>
                     <td>
@@ -113,7 +123,7 @@
 
         </div>
         <div class="tüüp">
-            <h3 class="tüüp">Määra asutuse tüüp</h3>
+            <h3 class="tüüp">Asutuse tüüp</h3>
             <table id="asutusetabel"> 
                 <tr>
                     <td>
@@ -187,7 +197,7 @@
             <button class="tüüp" onclick="MuudaMärkeruudud('tüüp');">Vali kõik</button>
         </div>
         <div class="inimesi">
-            <h3 class="inimesi">Määra eeldatav inimeste arv</h3> 
+            <h3 class="inimesi">Eeldatav inimeste arv</h3> 
             <input type="number" min="0" max="2000" value="0" class="inimesi" id="mininimesislider">
             <span>Minimaalne mahutavus</span>
             <span id="mininimesiarv"></span>
@@ -214,9 +224,11 @@
             <span>Kas esitlustehnika võimalused on vajalikud?</span>
             <br>
             <input type="text" class="jahei" id="nimeosa" maxlength="20">
-            <label for="nimeosa">Otsitava koha nime osa</label>
+            <label for="nimeosa">Otsitava koha nimeosa</label>
         </div>
-        <button onclick="LaeTabel()">Lae tabel uuesti</button>
+        <div class="tabelinupp">
+            <button id="laetabel" onclick="LaeTabel()">Lae tabel uuesti</button>
+         </div>
     </div>
     <div>
         <table id="p6hitabel">
