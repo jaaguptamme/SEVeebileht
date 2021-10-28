@@ -16,7 +16,7 @@
         <h3>Kui haldad mõnda ägedat kohta, mis peaks kindlasti sellel lehel olema, siis teata sellest meile!</h3>
     </div>
     <div id="andmetesisestamine">
-        <form>
+        <form id="andmed">
             <label for="nimi">Sinu nimi:</label><br>
             <input type="text" name="name" id="nimi" placeholder="Kirjuta siia oma nimi" maxlength="40" autofocus/><br>
             <label for="telefon">Sinu telefoninumber:</label><br>
@@ -26,10 +26,17 @@
             <label for="kirjeldus">Koha kirjeldus:</label><br>
             <textarea type="text" id="kirjeldus" rows="10" cols="40" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
         </form>
-        <button id="saatmisnupp" onclick="Saada();">Saada ära</button>
+        <button id="saatmisnupp" onclick="SaadaKontrolli();">Saada ära</button>
     </div>
     <div id="pealesisestamist">
         <p>Kas kõik vajalik sai kirja?</p>
+        <button id="lõpetamata" onclick="TäiendanVeel()">Ei</button>
+        <button id="lõpetatud" onclick="SaadaLõplikult()">Jah</button>
+    </div>
+    <div id="tänusõnad">
+        <p>
+            Suur äitah, et edastasid andmed meile. Lisame need süsteemi esimesel võimalusel.
+        </p>
     </div>
 </body>
 </html>

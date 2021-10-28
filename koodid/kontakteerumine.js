@@ -1,4 +1,4 @@
-function Saada(){//kutsutakse välja kui kasutaja üritab andmeid edastada
+function SaadaKontrolli(){//kutsutakse välja kui kasutaja üritab andmeid edastada
     /*if(document.getElementById("nimi").value.length<5){//kasutaja pole nime sisetanud
         alert("Sisesta palun oma nimi");
         return;
@@ -14,4 +14,17 @@ function Saada(){//kutsutakse välja kui kasutaja üritab andmeid edastada
         return;
     }*/
     document.getElementById("pealesisestamist").style.display="block";
+}
+function TäiendanVeel(){//kasutaja täiendab veel sisestatavaid andmeid.
+    document.getElementById("pealesisestamist").style.display="none";
+}
+function SaadaLõplikult(){//kasutaja saadab andmed lõplikult ära;
+    document.getElementById("pealesisestamist").style.display="none";
+    window.open("mailto:test@example.com?subject=&body=");
+
+    /*tühjenda andmeväljad*/
+    let väljad=["nimi","telefon","email","kirjeldus"];
+    for(let i=0;i<väljad.length;i++){
+        document.getElementById(väljad[i]).value="";
+    }
 }
