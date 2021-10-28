@@ -2,14 +2,34 @@
 <html>
 <head>
 <link rel="stylesheet" href="stiilid/uldstiil.css">
-<link rel="stylesheet" href="sttilid/kontaktstiilid.css">
+<link rel="stylesheet" href="stiilid/kontaktstiilid.css">
 <title>Kontakteeru meiega</title>
+<script type="text/javascript" src="koodid/kontakteerumine.js"></script>
 </head>
 <body>
     <div id="päis">
 
     </div>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
-    
+    <div id="tutvustus">
+        <h1>Kontakteeru meiega</h1>
+        <h3>Kui haldad mõnda ägedat kohta, mis peaks kindlasti sellel lehel olema, siis teata sellest meile!</h3>
+    </div>
+    <div id="andmetesisestamine">
+        <form>
+            <label for="nimi">Sinu nimi:</label><br>
+            <input type="text" name="name" id="nimi" placeholder="Kirjuta siia oma nimi" maxlength="40" autofocus/><br>
+            <label for="telefon">Sinu telefoninumber:</label><br>
+            <input type="text" id="telefon" placeholder="Kirjuta siia oma telefoninumber" maxlength="15" inputmode="numeric"/><br>
+            <label for="email">Sinu e-posti aadress:</label><br>
+            <input type="email" id="email" placeholder="Kirjuta siia oma e-posti aadress" maxlength="40"/><br>
+            <label for="kirjeldus">Koha kirjeldus:</label><br>
+            <textarea type="text" id="kirjeldus" rows="10" cols="40" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
+        </form>
+        <button id="saatmisnupp" onclick="Saada();">Saada ära</button>
+    </div>
+    <div id="pealesisestamist">
+        <p>Kas kõik vajalik sai kirja?</p>
+    </div>
 </body>
 </html>
