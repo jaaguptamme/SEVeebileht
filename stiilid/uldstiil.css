@@ -1,3 +1,17 @@
 body{
     background-image: repeating-linear-gradient(-45deg, pink, lightblue 10px);
 }
+#päis{
+    text-align: center;
+}
+.algusnupp{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+.algusnupp:hover{
+    border-color: salmon;
+    border-radius:10px;
+}
