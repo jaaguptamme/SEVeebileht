@@ -14,11 +14,12 @@ function SaadaKontrolli(){//kutsutakse välja kui kasutaja üritab andmeid edast
         return;
     }*/
 
+    //Avame kasutajale teksti, kus on kirjas, mis andmeid peaks edastama ja samas sulgeme selle nupu
     document.getElementById("pealesisestamist").style.display="block";
     document.getElementById("saatmisnupp").style.display="none";
 }
 function TäiendanVeel(){//kasutaja täiendab veel sisestatavaid andmeid.
-    document.getElementById("pealesisestamist").style.display="none";
+    //Avame
     document.getElementById("saatmisnupp").style.display="block";
 }
 function SaadaLõplikult(){//kasutaja saadab andmed lõplikult ära;
