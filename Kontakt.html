@@ -11,60 +11,64 @@
 
     </div>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
-    <div id="tutvustus">
-        <h1>Kontakteeru meiega</h1>
-        <h3>Kui haldad mõnda ägedat kohta, mis peaks kindlasti sellel lehel olema, siis teata sellest meile!</h3>
-    </div>
-    <div id="andmetesisestamine">
-        <form id="andmed">
-            <label for="nimi">Sinu nimi:</label><br>
-            <input type="text" name="name" id="nimi" placeholder="Kirjuta siia oma nimi" maxlength="40" autofocus/><br>
-            <label for="telefon">Sinu telefoninumber:</label><br>
-            <input type="text" id="telefon" placeholder="Kirjuta siia oma telefoninumber" maxlength="15" inputmode="numeric"/><br>
-            <label for="email">Sinu e-posti aadress:</label><br>
-            <input type="email" id="email" placeholder="Kirjuta siia oma e-posti aadress" maxlength="40"/><br>
-            <label for="kirjeldus">Koha kirjeldus:</label><br>
-            <textarea type="text" id="kirjeldus" rows="10" cols="40" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
-        </form>
-        <button id="saatmisnupp" onclick="SaadaKontrolli();">Saada ära</button>
-    </div>
-    <div id="pealesisestamist">
-        <p>Kas kõik vajalik sai kirja? Koha kirjeldus peaks siseldama järgmist:</p>
-        <ul>
-            <li>Asutuse nimi</li>
-            <li>Omavalitsus</li>
-            <li>Asutuse tüüp</li>
-            <li>Koduleht</li>
-            <li>Kontakttelefon</li>
-            <li>E-mail</li>
-            <li>Kontaktisiku nimi</li>
-            <li>Postiaadress</li>
-            <li>Mahutavus (inimesi)</li>
-            <li>Saali olemasolu</li>
-            <li>Saali asukoht (korrus)</li>
-            <li>Saali mahutavus</li>
-            <li>Saali lava mõõtmed</li> 
-            <li>II saali mahutavus</li>
-            <li>Helitehnilised võimalused</li>
-            <li>Valgustehnilised võimalused</li>
-            <li>Esitlustehnika võimalused</li>
-            <li>Ekraanimõõtmed (cm)</li>
-            <li>Näitusesaali/galerii olemasolu</li> 
-            <li>Näitusesaali/galerii võimalused</li> 
-            <li>Peakaitsme võimsus</li> 
-            <li>Juurdepääs ratastooliga</li> 
-            <li>Internetiühendus</li> 
-            <li>Tualettide info</li> 
-            <li>Parkimise info</li> 
-            <li>Vabaõhusündmuste paiga olemasolu</li> 
-        </ul>
-        <button id="lõpetamata" onclick="TäiendanVeel()">Ei</button>
-        <button id="lõpetatud" onclick="SaadaLõplikult()">Jah</button>
+    <div id="küsitlus">
+        <div id="tutvustus">
+            <h1>Kontakteeru meiega</h1>
+            <h3>Kui haldad mõnda ägedat kohta, mis peaks kindlasti sellel lehel olema, siis teata sellest meile!</h3>
+        </div>
+        <div id="andmetesisestamine">
+            <form id="andmed">
+                <label for="nimi">Sinu nimi:</label><br>
+                <input type="text" name="name" id="nimi" placeholder="Kirjuta siia oma nimi" maxlength="40" autofocus/><br>
+                <label for="telefon">Sinu telefoninumber:</label><br>
+                <input type="text" id="telefon" placeholder="Kirjuta siia oma telefoninumber" maxlength="15" inputmode="numeric"/><br>
+                <label for="email">Sinu e-posti aadress:</label><br>
+                <input type="email" id="email" placeholder="Kirjuta siia oma e-posti aadress" maxlength="40"/><br>
+                <label for="kirjeldus">Koha kirjeldus:</label><br>
+                <textarea type="text" id="kirjeldus" rows="10" cols="40" placeholder="Kirjuta siia kõik enda hallatava koha kohta"></textarea>
+            </form>
+            <button id="saatmisnupp" onclick="SaadaKontrolli();">Saada ära</button>
+        </div>
+        <div id="pealesisestamist">
+            <p>Kas kõik vajalik sai kirja? Koha kirjeldus peaks siseldama järgmist:</p>
+            <ul>
+                <li>Asutuse nimi</li>
+                <li>Omavalitsus</li>
+                <li>Asutuse tüüp</li>
+                <li>Koduleht</li>
+                <li>Kontakttelefon</li>
+                <li>E-mail</li>
+                <li>Kontaktisiku nimi</li>
+                <li>Postiaadress</li>
+                <li>Mahutavus (inimesi)</li>
+                <li>Saali olemasolu</li>
+                <li>Saali asukoht (korrus)</li>
+                <li>Saali mahutavus</li>
+                <li>Saali lava mõõtmed</li> 
+                <li>II saali mahutavus</li>
+                <li>Helitehnilised võimalused</li>
+                <li>Valgustehnilised võimalused</li>
+                <li>Esitlustehnika võimalused</li>
+                <li>Ekraanimõõtmed (cm)</li>
+                <li>Näitusesaali/galerii olemasolu</li> 
+                <li>Näitusesaali/galerii võimalused</li> 
+                <li>Peakaitsme võimsus</li> 
+                <li>Juurdepääs ratastooliga</li> 
+                <li>Internetiühendus</li> 
+                <li>Tualettide info</li> 
+                <li>Parkimise info</li> 
+                <li>Vabaõhusündmuste paiga olemasolu</li> 
+            </ul>
+            <button id="lõpetamata" onclick="TäiendanVeel()">Ei</button>
+            <button id="lõpetatud" onclick="SaadaLõplikult()">Jah</button>
+        </div>
     </div>
     <div id="tänusõnad">
-        <p>
-            Suur äitah, et edastasid andmed meile. Lisame need süsteemi esimesel võimalusel.
-        </p>
+        <h1>
+            Suur äitah sulle, et edastasid andmed meile. Võtame sinuga kindlasti ühendust ja lisame andmed süsteemi esimesel võimalusel.
+            <br>
+            Seniks tutvu teiste lahedate kohtadega vajutades nupule 'Otsingumootor'.
+        </h1>
     </div>
 </body>
 </html>

@@ -1,6 +1,8 @@
 div#pealesisestamist{
     display: none;
 }
-div#tänudsõnad{
+#tänusõnad{
     display:none;
+    background-color:lightcyan;
+    padding: 20px;
 }
