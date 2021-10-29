@@ -24,3 +24,8 @@ button:hover{
     border-color: salmon;
     border-radius: 50px;
 }
+img{
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
