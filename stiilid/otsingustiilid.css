@@ -34,6 +34,8 @@ div.parameetrid > .tabelinupp{
 }
 #p6hitabel{
     table-layout:auto;
+}
+#p6hitabel th{
     background-color: lightpink;
 }
 #p6hitabel, td{
