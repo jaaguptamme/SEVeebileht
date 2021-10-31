@@ -33,13 +33,12 @@ div.parameetrid > .tabelinupp{
     padding-top: 10px;
 }
 #p6hitabel{
+    padding: 10px;
     table-layout:auto;
-}
-#p6hitabel th{
     background-color: lightpink;
 }
-#p6hitabel, td{
-    padding-inline: 2px;
+#p6hitabel th{
+    background-color: white;
 }
 #p6hitabel, tr:hover{
     filter: brightness(115%);
