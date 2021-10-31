@@ -5,11 +5,9 @@
     white-space: nowrap;
 }
 
-#vallatabel {
-    background-color: floralwhite;
-}
-#asutusetabel {
-    background-color: floralwhite;
+#vallatabel, #asutusetabel {
+    background-color:gold;
+    color:deeppink;
 }
 #vallatabel td{
     border: 1px solid black;
@@ -17,7 +15,9 @@
 #asutusetabel td{
     border: 1px solid black;
 }
-
+div{
+    border: 10px solid red;
+}
 input.inimesi{
     width: 60px;
 }
