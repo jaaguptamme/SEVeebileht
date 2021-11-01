@@ -1,3 +1,6 @@
+/*
+    Selles failis on "Kontakteeru meiega" vahelehe kood.
+*/
 function Peida(id,aeg){//See funtsioon kui hiirt liigutatakse ja see peidab meme vastavalt edastatavatele parameetritele
     setTimeout(function(){document.getElementById(id).style.display="none";},aeg);
 }

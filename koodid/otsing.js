@@ -1,5 +1,6 @@
-//Vahelehe Otsing.html js fail
-
+/*
+    Selles failis on Otsingu vahelehe kood.
+*/
 function EemaldaTühikud(sõne){//eemaldame sõnest tühikud ja muudame kõik tähed väikeseks, sest htmlis ei või id olla mitmesõnaline;
     return sõne.toLowerCase().split(" ").join("");
 }

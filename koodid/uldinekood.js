@@ -1,4 +1,6 @@
-//See kood käivitatakse kõigil vahelehtedel
+/*
+    Selles failis on kood, mis käivitatakse kõigis vahelehtedes.
+*/
 //loome lehe algusesse nupud erinevatele vahelehtedele
 let nuppudehtml="";
 nuppudehtml+=`<button class="algusnupp" id="avalehele" type="button" onclick="location.href='Index.html'" >Avalehele</button>`

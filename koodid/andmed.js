@@ -1,3 +1,6 @@
+/*
+    Selles failis on "Kontakteeru meiega" vahelehe kood.
+*/
 //Siin failis on sissekodeeritud kujul lähte andmed, kuna xls failist lugemine tundus paras peavalu
 var nimetused="nimi,omavalitsus,asutusetüüp,koduleht,telefon,email,kontaktisikunimi,postiaadress,mahutavus,saaliolemasolu,saaliasukoht,saalimahutavus,saalilavamõõtmed,IIsaalimahutavus,helitehnilisedvõimalused,valgustehnilisedvõimalused,esitlustehnikavõimalused,ekraanimõõtmed,näitusesaaligaleriiolemasolu,näitusesaaligaleriivõimalused,peakaitsmevõimsus,juurdepääsratastooliga,internetiühendus,tualettideinfo,parkimiseinfo,vabaõhusündmustepaigaolemasolu"
 var tahendused={};//sõnaraamat tahendused on üksühene vastavud veeru nimetuse ja tema positsiooni vahel
