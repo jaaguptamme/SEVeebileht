@@ -118,7 +118,13 @@ function LaeTabel(){//funktsioon, mis genereerib html-i, mida kasutajale näidat
         for(let j=0;j<vaartused.length;j++){
             uusRida+="<td class='"+tahendused[j]+"'>";//iga elemendi klassiks saab tema kohal päises olev sõna
             if(tahendused[j]=="koduleht" && vaartused[j].length>5){//kodulehtedele on klikitavad lingid
-                uusRida+="<a href='"+vaartused[j]+"'>";
+
+                if(vaartused[j].startsWith("www")){//mõned veebilehed on andmebaasis valel kujul, nendele peame httpsi lisama, et brauser õige lingi avaks
+                    uusRida+="<a href='http://"+vaartused[j]+"'>";
+                }
+                else{
+                    uusRida+="<a href='"+vaartused[j]+"'>";
+                }
                 uusRida+=vaartused[j];
                 uusRida+="</a>"
             }
