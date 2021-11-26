@@ -35,7 +35,7 @@ h1 {
     font-size: 42px;
     padding-bottom: 10px;
 }
-  
+
 h1:after {
     content: '';
     background: black;
@@ -55,28 +55,28 @@ h1:after {
     font-size: 22px;
     line-height: 20px;
 }
-  
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
     padding: 1em;
 }
-  
+
 .col {
     flex: 1 0 150px;
     margin: 3px;
     min-width: 100px;
     padding: 1px;
 }
-  
+
 @media screen and (max-width: 650px) {
     .col {
       width: 100%;
       display: block;
     }
 }
-    
+
 .card {
     width: 200px;
     height: 230px;
@@ -90,31 +90,31 @@ h1:after {
     background-size: cover;
     transition: transform 0.5s;
 }
-  
+
 .card1 {
     background-image: url(pildid/pilt1.1.png);
 }
-  
+
 .card2 {
     background-image: url(pildid/pilt2.1.jpg);
 }
-  
+
 .card3 {
     background-image: url(pildid/pilt3.1.jpg);
 }
-  
+
 .card4 {
     background-image: url(pildid/pilt4.1.jpg);
 }
-  
+
 .card5 {
     background-image: url(pildid/pilt5.1.jpg);
 }
-  
+
 .card:hover {
     transform: translateY(-10px);
 }
-  
+
 h5 {
     font-family: "Lucida Grande", Tahoma;
 	font-variant: normal;
@@ -124,7 +124,7 @@ h5 {
     font-size: 18px;
     text-shadow: 0 0 5px #fff;
 }
-  
+
 a {
     text-decoration: none;
 }
@@ -299,7 +299,11 @@ p {
     border-radius: 10px;
     font-size: 18px;
   }
-  
+
 #myBtn:hover {
     background-color: #555;
+}
+
+#content{
+	position: relative;
 }
