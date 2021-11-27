@@ -84,7 +84,7 @@ h1{
 }
 
 
-.nupp:onclick{
+.nupp:target{
 	background: var(--primary-color);
 	opacity: 0.9;
 
@@ -117,7 +117,7 @@ a {
 	text-decoration: none;
 }
 
-}
+
 .demo a {
   position: absolute;
   bottom: 20px;
