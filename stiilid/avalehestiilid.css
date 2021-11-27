@@ -5,18 +5,11 @@
 html, body {
   margin:0;
   height:100%;
-	font-family: "Lucida Grande", Tahoma;
   scroll-behavior: smooth;
-  background: #FCFCFC;
 }
 h1{
-	opacity: 0.75;
-	font-family: "Lucida Grande", Tahoma;
-	font-variant: normal;
-	text-transform: uppercase;
+ 	opacity: 0.75;
   margin-top: 10px;
-	letter-spacing: 0.1em;
-
 }
 .video {
 	position: relative;
@@ -28,9 +21,7 @@ h1{
 	text-align: center;
 	padding: 0 20px;
 	color:#FFFF;
-
 }
-
 .video-container{
 	position: absolute;
 	top: 0;
@@ -59,7 +50,6 @@ h1{
 	width:100%;
 	height: 100%;
 	background: rgb(0,0,0,0.6)
-
 }
 .sisu{
 	z-index:10;
@@ -67,13 +57,7 @@ h1{
 }
 
 .nupp{
-	font-family: "Lucida Grande", Tahoma;
-	display:inline-block;
-	padding: 10px 30px;
 	background: var(--primary-color);
-	color: #FFF;
-	border: 1px #FFF solid;
-	border-radius: 5px;
 	margin-top: 25px;
 	opacity: 0.7;
 }
@@ -94,18 +78,11 @@ h1{
 	padding: 30px;
 	text-align: center;
 	margin-top: 10px;
-	letter-spacing: 0.1em;
-
 }
-
 #meist p {
-	font-variant: normal;
-	font-size: 0.8rem;
 	max-width:600px;
 	margin: auto;
-	color: #091420
 }
-
 a {
 	position: absolute;
 	bottom: 20px;
@@ -116,8 +93,6 @@ a {
 	transform: translate(0, -50%);
 	text-decoration: none;
 }
-
-
 .demo a {
   position: absolute;
   bottom: 20px;
@@ -127,7 +102,6 @@ a {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;

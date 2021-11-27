@@ -7,17 +7,13 @@
 .telefon{
     white-space: nowrap;
 }
-
-#vallatabel {
+.koduleht{
+    font-size: 0.8em;
+}
+#vallatabel, #asutusetabel{
     background-color: floralwhite;
 }
-#asutusetabel {
-    background-color: floralwhite;
-}
-#vallatabel td{
-    border: 1px solid black;
-}
-#asutusetabel td{
+#vallatabel td, #asutusetabel td{
     border: 1px solid black;
 }
 
@@ -28,7 +24,7 @@ input.inimesi{
     font-size:medium;
     font-weight: bold;
     width: 200px;
-    height: 40px;
+    height: 60px;
     background-color:crimson;
 }
 div.parameetrid > .tabelinupp{
@@ -38,7 +34,7 @@ div.parameetrid > .tabelinupp{
 #p6hitabel{
     padding: 10px;
     table-layout:auto;
-    background-color: lightpink;
+    background-color:navajowhite;
 }
 #p6hitabel th{
     background-color: white;

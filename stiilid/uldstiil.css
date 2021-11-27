@@ -1,9 +1,13 @@
 /*
     Selles failis on kõigil vahelehtedel kasutatavad stiilid.
 */
+*{
+    font-family: "Lucida Grande", Tahoma;
+	font-variant: normal;
+	text-transform: uppercase;
+}
 body{
-    background-image: repeating-linear-gradient(-45deg, pink, lightblue 10px);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
 }
 #päis{
     text-align: center;
@@ -15,13 +19,13 @@ body{
     font-size: 20px;
     
 }
-.algusnupp:hover{
-    
-}
 button{
     transition: all 0.2s;
     padding: 15px 30px;
     border-radius: 10px;
+    background-color:lightsteelblue;
+    color: #FFF;
+	border: #FFF solid;
 }
 button:hover{
     border-color: salmon;
@@ -31,4 +35,56 @@ img{
     width: 720px;
     height: auto;
     border-radius: 10px;
+}
+img {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    font-weight: bold;
+}
+p, li{
+    font-stretch: ultra-condensed;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+h1{
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 42px;
+    padding-bottom: 10px;
+}
+h5 {
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    text-shadow: 0 0 5px #fff;
+}
+a {
+    text-decoration: none;
+}
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
 }
