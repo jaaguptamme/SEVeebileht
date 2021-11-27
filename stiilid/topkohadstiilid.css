@@ -91,26 +91,21 @@ h1:after {
     transition: transform 0.5s;
 }
 
-.card1 {
-    background-image: url(pildid/pilt1.1.png);
+#card1 {
+    background-image: url('../pildid/pilt1.1.png');
 }
-
-.card2 {
-    background-image: url(pildid/pilt2.1.jpg);
+#card2 {
+    background-image: url("../pildid/pilt2.1.jpg");
 }
-
-.card3 {
-    background-image: url(pildid/pilt3.1.jpg);
+#card3 {
+    background-image: url("../pildid/pilt3.1.jpg");
 }
-
-.card4 {
-    background-image: url(pildid/pilt4.1.jpg);
+#card4 {
+    background-image: url("../pildid/pilt4.1.jpg");
 }
-
-.card5 {
-    background-image: url(pildid/pilt5.1.jpg);
+#card5 {
+    background-image: url("../pildid/pilt5.1.jpg");
 }
-
 .card:hover {
     transform: translateY(-10px);
 }
@@ -129,51 +124,7 @@ a {
     text-decoration: none;
 }
 
-.section1 {
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background: #333;
-}
-
-.section2 {
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background: #333;
-}
-
-.section3 {
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background: #333;
-}
-
-.section4 {
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background: #333;
-}
-
-.section5 {
+.section1 , .section2, .section3, .section4, .section5{
     margin: 0;
     padding: 0px;
     height: 100vh;
