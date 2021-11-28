@@ -17,12 +17,21 @@ div#pealesisestamist{
     font-weight: bold;
 }
 #lõpetamata,#lõpetatud,#saatmisnupp{
-    font-weight: bold;
-    font-size: large;
+    font-weight: normal;
+    font-size: 15px;
 }
 #lõpetamata{
     background-color:red;
 }
 #lõpetatud{
     background-color:springgreen;
+}
+
+#saatmisnupp{
+    bottom: 15px;
+    right: 20px;
+    background-color:rgb(40,43,41,0.9);
+    border: #A7D1C9;
+    padding: 10px 10px;
+    color: #FFF;
 }

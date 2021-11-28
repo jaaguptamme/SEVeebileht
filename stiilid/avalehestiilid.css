@@ -57,7 +57,13 @@ h1{
 }
 
 .nupp{
+	font-family: "Lucida Grande", Tahoma;
+	display:inline-block;
+	padding: 10px 30px;
 	background: var(--primary-color);
+	color: #FFF;
+	border: 1px #FFF solid;
+	border-radius: 5px;
 	margin-top: 25px;
 	opacity: 0.7;
 }
@@ -65,13 +71,6 @@ h1{
 .nupp:hover{
 	transform: scale(0.98);
 	opacity: 0.9;
-}
-
-
-.nupp:target{
-	background: var(--primary-color);
-	opacity: 0.9;
-
 }
 
 #meist {
@@ -130,4 +129,11 @@ a {
 
 #meist a {
   padding-top: 60px;
+}
+
+h2 {
+  color:rgb(240,240,240,0.7);
+}
+span{
+  color:rgb(240,240,240);
 }

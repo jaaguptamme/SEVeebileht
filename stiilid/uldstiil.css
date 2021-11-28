@@ -2,34 +2,38 @@
     Selles failis on kõigil vahelehtedel kasutatavad stiilid.
 */
 *{
-    font-family: "Lucida Grande", Tahoma;
+  font-family: "Lucida Grande", Tahoma;
 	font-variant: normal;
 	text-transform: uppercase;
+  color: rgb(40,43,41);
 }
 body{
-    background-color: grey;
+  background-image: url("../pildid/v11.png");
 }
 #päis{
     text-align: center;
 }
 
+
 .algusnupp{
     display: inline-block;
     padding: 15px 30px;
-    font-size: 20px;
-    
+    font-size: 12px;
+    color: black;
+
 }
 button{
     transition: all 0.2s;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
-    background-color:lightsteelblue;
+    background-color:rgb(0,0,0,0);
     color: #FFF;
-	border: #FFF solid;
+    border: rgb(0,0,0,0);
 }
 button:hover{
-    border-color: salmon;
+    border-color: #FFF;
     border-radius: 50px;
+    color:#E15759;
 }
 img{
     width: 720px;
@@ -48,7 +52,8 @@ ol,ul{
     padding: 0;
 }
 li{
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 10px;
 }
 p, li{
     font-stretch: ultra-condensed;
@@ -59,19 +64,41 @@ p, li{
 h3 {
     text-align: center;
     letter-spacing: 0.1em;
-    font-size: 20px;
+    font-size: 15px;
 }
 h1{
     letter-spacing: 0.1em;
     font-weight: bold;
     text-align: center;
-    font-size: 42px;
+    font-size: 17px;
     padding-bottom: 10px;
+}
+span{
+  font-stretch: ultra-condensed;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  text-align: left;
+}
+
+th{
+  font-stretch: ultra-condensed;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  text-align: left;
+
+}
+
+label{
+  font-stretch: ultra-condensed;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  text-align: center;
+
 }
 h5 {
     letter-spacing: 0.1em;
-    font-size: 18px;
-    text-shadow: 0 0 5px #fff;
+    font-size: 15px;
+    text-shadow: 0 0 2px #fff;
 }
 a {
     text-decoration: none;

@@ -11,22 +11,29 @@
     font-size: 0.8em;
 }
 #vallatabel, #asutusetabel{
-    background-color: floralwhite;
+    background-color: rgb(235,237,237,0.8);
 }
 #vallatabel td, #asutusetabel td{
-    border: 1px solid black;
+    border: 1px solid rgb(30,21,29,0.4);
+}
+
+#vallatabel td:hover, #asutusetabel td:hover{
+    border: 1px solid #E15759;
+
 }
 
 input.inimesi{
     width: 60px;
 }
 #laetabel{
-    font-size:medium;
-    font-weight: bold;
-    width: 200px;
-    height: 60px;
-    background-color:crimson;
+  bottom: 15px;
+  right: 20px;
+  background-color:rgb(40,43,41,0.9);
+  border: #3d5afe;
+  padding: 10px 10px;
+  color: #FFF;
 }
+
 div.parameetrid > .tabelinupp{
     padding-bottom: 10px;
     padding-top: 10px;
@@ -34,20 +41,30 @@ div.parameetrid > .tabelinupp{
 #p6hitabel{
     padding: 10px;
     table-layout:auto;
-    background-color:navajowhite;
+    background-color:rgb(30,21,29,0.1);
+    font-size: 13px;
 }
 #p6hitabel th{
-    background-color: white;
+    background-color: #eceff1;
+    border: 1px solid rgb(30,21,29,0.2);
+
 }
 #p6hitabel, tr:hover{
-    filter: brightness(115%);
+  filter: brightness(105%);
 }
 #p6hitabel tbody tr:nth-child(odd){
-    background-color: burlywood;
+    background-color: #EBEDED;
+}
+#p6hitabel tbody tr:nth-child(odd):hover{
+  background-color: rgb(38,104,103,0.4);
 }
 #p6hitabel tbody tr:nth-child(even){
-    background-color:lightgreen;
+    background-color:rgb(240,240,240,0.6);
 }
+#p6hitabel tbody tr:nth-child(even):hover{
+  background-color: rgb(38,104,103,0.4);
+}
+
 #p6hitabel thead th{
     position: sticky;
     top: 0;
@@ -56,4 +73,20 @@ td{
     max-width: 150px;
     overflow: hidden;
 }
+.omavalitsus button {
+  bottom: 15px;
+  right: 20px;
+  background-color:rgb(40,43,41,0.9);
+  border: #A7D1C9;
+  padding: 10px 10px;
+  color: #FFF;
+}
 
+.tüüp button {
+  bottom: 15px;
+  right: 20px;
+  background-color:rgb(40,43,41,0.9);
+  border: #A7D1C9;
+  padding: 10px 10px;
+  color: #FFF;
+}

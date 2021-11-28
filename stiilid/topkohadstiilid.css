@@ -160,8 +160,14 @@ h3:after {
     z-index: 99;
     outline: none;
     cursor: pointer;
+		background-color:#E15759;
+		border: #FFF;
 }
 
 #content{
 	position: relative;
+}
+
+h5{
+	color:#E15759;
 }

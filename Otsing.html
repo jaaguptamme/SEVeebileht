@@ -12,24 +12,31 @@
     <div id="päis">
 
     </div>
+    <hr>
+    </hr>
     <script type="text/javascript" src="koodid/uldinekood.js"></script>
     <h1>Koha otsing</h1>
     <div class="parameetrid">
         <div id="otsingututvustus">
-            <h3>
+            <span>
                 Siin lehel saad vastavalt enda soovidele leida sobiva koha. Selleks määra:
-            </h3>
-                <ol>
-                    <li><h5>Sobivad omavalitsused</h5></li>
-                    <li><h5>Mis tüüpi asutust otsid</h5></li>
-                    <li><h5>Umbkaudne inimeste arv</h5></li>
-                    <li><h5>Teised nõudmised asukohale</h5></li>
-                </ol>
-            <h3>
+            </span>
+            <br>
+            <br>
+                <ul>
+                    <li><span>Sobivad omavalitsused</span></li>
+                    <li><span>Mis tüüpi asutust otsid</span></li>
+                    <li><span>Umbkaudne inimeste arv</span></li>
+                    <li><span>Teised nõudmised asukohale</span></li>
+                </ul>
+                <br>
+            <span>
                 Kui oled oma soovid kirja pannud, siis tabeli uuesti laadimiseks vajuta nupule.
-            </h3>
+            </span>
         </div>
-        
+        <br>
+        <br>
+
         <div class="omavalitsus">
             <h3 class="omavalitsus">Omavalitsus</h3>
             <table id="vallatabel">
@@ -75,7 +82,7 @@
                     <td>
                         <input type="checkbox" class="omavalitsus" id="põlvavald" checked>
                         <span>Põlva vald</span>
-                    </td> 
+                    </td>
                     <td>
                         <input type="checkbox" class="omavalitsus" id="põlvalinn" checked>
                         <span>Põlva linn</span>
@@ -91,7 +98,7 @@
                     <td>
                         <input type="checkbox" class="omavalitsus" id="setomaavald" checked>
                         <span>Setomaa vald</span>
-                    </td> 
+                    </td>
                  </tr>
                  <tr>
                     <td>
@@ -109,7 +116,7 @@
                     <td>
                         <input type="checkbox" class="omavalitsus" id="valgavald" checked>
                         <span>Valga vald</span>
-                    </td> 
+                    </td>
                     <td>
                         <input type="checkbox" class="omavalitsus" id="otepäävald" checked>
                         <span>Otepää vald</span>
@@ -121,88 +128,88 @@
                     <td>
                         <input type="checkbox" class="omavalitsus" id="tõrvavald" checked>
                         <span>Tõrva vald</span>
-                    </td> 
+                    </td>
                  </tr>
-            </table> 
+            </table>
             <button class="omavalitsus" onclick="MuudaMärkeruudud('omavalitsus');">Vali kõik</button>
 
         </div>
         <div class="tüüp">
             <h3 class="tüüp">Asutuse tüüp</h3>
-            <table id="asutusetabel"> 
+            <table id="asutusetabel">
                 <tr>
                     <td>
-                        <input type="checkbox" class="tüüp" id="kultuurikeskus" checked> 
+                        <input type="checkbox" class="tüüp" id="kultuurikeskus" checked>
                         <span>Kultuurikeskus</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="sündmuskeskus" checked> 
+                        <input type="checkbox" class="tüüp" id="sündmuskeskus" checked>
                         <span>Sündmuskeskus</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="muuseum" checked> 
+                        <input type="checkbox" class="tüüp" id="muuseum" checked>
                         <span>Muuseum</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="raamatukogu" checked> 
+                        <input type="checkbox" class="tüüp" id="raamatukogu" checked>
                         <span>Raamatukogu</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="kirik" checked> 
+                        <input type="checkbox" class="tüüp" id="kirik" checked>
                         <span>Kirik</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="staadion" checked> 
+                        <input type="checkbox" class="tüüp" id="staadion" checked>
                         <span>Staadion</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="noortekeskus" checked> 
+                        <input type="checkbox" class="tüüp" id="noortekeskus" checked>
                         <span>Noortekeskus</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="vabaõhulava" checked> 
+                        <input type="checkbox" class="tüüp" id="vabaõhulava" checked>
                         <span>Vabaõhulava</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" class="tüüp" id="spordikeskus" checked> 
+                        <input type="checkbox" class="tüüp" id="spordikeskus" checked>
                         <span>Spordikeskus</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="muusikakool" checked> 
+                        <input type="checkbox" class="tüüp" id="muusikakool" checked>
                         <span>Muusikakool</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="teater" checked> 
+                        <input type="checkbox" class="tüüp" id="teater" checked>
                         <span>Teater</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="elamuskeskus" checked> 
+                        <input type="checkbox" class="tüüp" id="elamuskeskus" checked>
                         <span>Elamuskeskus</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="galerii" checked> 
+                        <input type="checkbox" class="tüüp" id="galerii" checked>
                         <span>Galerii</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="kino" checked> 
+                        <input type="checkbox" class="tüüp" id="kino" checked>
                         <span>Kino</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="klubi" checked> 
+                        <input type="checkbox" class="tüüp" id="klubi" checked>
                         <span>Klubi</span>
                     </td>
                     <td>
-                        <input type="checkbox" class="tüüp" id="spordiväljak" checked> 
+                        <input type="checkbox" class="tüüp" id="spordiväljak" checked>
                         <span>Spordiväljak</span>
                     </td>
-                </tr>       
+                </tr>
             </table>
             <button class="tüüp" onclick="MuudaMärkeruudud('tüüp');">Vali kõik</button>
         </div>
         <div class="inimesi">
-            <h3 class="inimesi">Eeldatav inimeste arv</h3> 
+            <h3 class="inimesi">Eeldatav inimeste arv</h3>
             <input type="number" min="0" max="2000" value="0" class="inimesi" id="mininimesislider">
             <span>Minimaalne mahutavus</span>
             <span id="mininimesiarv"></span>
@@ -211,28 +218,28 @@
             <span>Maksimaalne mahutavus</span>
             <span id="maxinimesiarv"></span>
             <br>
-            <input type="checkbox" class="inimesi" id="teadmatamahutavus" checked> 
+            <input type="checkbox" class="inimesi" id="teadmatamahutavus" checked>
             <span>Luba asutused, kus mahutavus pole teada</span>
         </div>
         <div class="jahei">
             <h3 class="jahei">Teised parameetrid</h3>
-            <input type="checkbox" class="jahei" id="saaliolemasolu"> 
+            <input type="checkbox" class="jahei" id="saaliolemasolu">
             <span>Kas saal on vajalik?</span>
             <br>
-            <input type="checkbox" class="jahei" id="helitehnilisedvõimalused"> 
+            <input type="checkbox" class="jahei" id="helitehnilisedvõimalused">
             <span>Kas helitehnilised võimalused on vajalikud?</span>
             <br>
-            <input type="checkbox" class="jahei" id="valgustehnilisedvõimalused"> 
+            <input type="checkbox" class="jahei" id="valgustehnilisedvõimalused">
             <span>Kas valgustehnilised võimalused on vajalikud?</span>
             <br>
-            <input type="checkbox" class="jahei" id="esitlustehnikavõimalused"> 
+            <input type="checkbox" class="jahei" id="esitlustehnikavõimalused">
             <span>Kas esitlustehnika võimalused on vajalikud?</span>
             <br>
             <input type="text" class="jahei" id="nimeosa" maxlength="20">
             <label for="nimeosa">Otsitava koha nimeosa</label>
         </div>
         <div class="tabelinupp">
-            <button id="laetabel" onclick="LaeTabel()">Lae tabel uuesti</button>
+            <button id="laetabel" class="laenupp" onclick="LaeTabel()">Lae tabel uuesti</button>
          </div>
     </div>
     <div>
@@ -251,25 +258,25 @@
                     <th>Saali olemasolu</th>
                     <th>Saali asukoht (korrus)</th>
                     <th>Saali mahutavus</th>
-                    <th>Saali lava mõõtmed</th> 
+                    <th>Saali lava mõõtmed</th>
                     <th>II saali mahutavus</th>
                     <th>Helitehnilised võimalused</th>
                     <th>Valgustehnilised võimalused</th>
                     <th>Esitlustehnika võimalused</th>
                     <th>Ekraanimõõtmed (cm)</th>
-                    <th>Näitusesaali/galerii olemasolu</th> 
-                    <th>Näitusesaali/galerii võimalused</th> 
-                    <th>Peakaitsme võimsus</th> 
-                    <th>Juurdepääs ratastooliga</th> 
-                    <th>Internetiühendus</th> 
-                    <th>Tualettide info</th> 
-                    <th>Parkimise info</th> 
-                    <th>Vabaõhusündmuste paiga olemasolu</th> 
+                    <th>Näitusesaali/galerii olemasolu</th>
+                    <th>Näitusesaali/galerii võimalused</th>
+                    <th>Peakaitsme võimsus</th>
+                    <th>Juurdepääs ratastooliga</th>
+                    <th>Internetiühendus</th>
+                    <th>Tualettide info</th>
+                    <th>Parkimise info</th>
+                    <th>Vabaõhusündmuste paiga olemasolu</th>
                 </tr>
             </thead>
            <tbody>
 
-           </tbody> 
+           </tbody>
         </table>
     </div>
 </body>
